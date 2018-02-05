@@ -17,10 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include, url
 from .apps.out_of_space import urls as message_url
+from .apps.calculator import urls as message_url
 from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^api/', include(message_url)),
+    url(r'^calculate/', include(message_url)),
     url(r'home/', TemplateView.as_view(template_name="index.html")),
+    url(r'calculator/', TemplateView.as_view(template_name="index2.html")),
 ]

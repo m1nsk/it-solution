@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'it_solution.apps.out_of_space',
+    'it_solution.apps.bitrix',
+    'it_solution.apps.calculator',
     'corsheaders',
 ]
 
